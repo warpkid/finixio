@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+th,
+td {
+  text-align: left;
+  padding: 20px;
+}
