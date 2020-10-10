@@ -15,7 +15,7 @@ export const getCoinInfo = async () => {
     let imageUrl = display[coin].USD.IMAGEURL;
     let diff = calculateDifference(current, open);
     return {
-      imageUrl: "https://min-api.cryptocompare.com/" + imageUrl,
+      imageUrl: "https://cryptocompare.com" + imageUrl,
       coin,
       current,
       open,

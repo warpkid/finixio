@@ -21,7 +21,17 @@ const CurrencyTable = ({ coins, ...props }) => {
           {coins &&
             coins.map((coin) => (
               <tr key={coin.coin}>
-                <td>{coin.coin}</td>
+                <td>
+                  <img
+                    style={{
+                      height: 32,
+                      paddingRight: 5,
+                      verticalAlign: "middle",
+                    }}
+                    src={coin.imageUrl}
+                  />{" "}
+                  {coin.coin}
+                </td>
                 <td>${coin.current.toFixed(2)}</td>
                 <td>${coin.open.toFixed(2)}</td>
                 <td>{coin.differenceDisplay}</td>
