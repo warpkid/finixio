@@ -35,6 +35,7 @@ const getTopList = async () => {
 };
 
 const calculateDifference = (current, opening) => {
-  let result = (((current - opening) / opening) * 100).toFixed(2);
-  return [result, "$" + (current - opening).toFixed(2)];
+  var diff = current - opening;
+  let result = diff > 0 ? ((diff / opening) * 100).toFixed(4) : 0;
+  return [result, "$" + (current - opening).toFixed(4)];
 };

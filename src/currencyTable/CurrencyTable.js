@@ -32,8 +32,8 @@ const CurrencyTable = ({ coins, ...props }) => {
                   />{" "}
                   {coin.coin}
                 </td>
-                <td>${coin.current.toFixed(2)}</td>
-                <td>${coin.open.toFixed(2)}</td>
+                <td>${coin.current.toFixed(4)}</td>
+                <td>${coin.open.toFixed(4)}</td>
                 <td>{coin.differenceDisplay}</td>
               </tr>
             ))}
